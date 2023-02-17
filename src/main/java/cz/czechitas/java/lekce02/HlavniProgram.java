@@ -88,6 +88,48 @@ HlavniProgram {
         }
 
     }
+    public void slunce() {
+        zofka = new Turtle();
+        zofka.penUp();
+        zofka.turnLeft(65);
+        zofka.move(350);
+        zofka.penDown();
+        for (int i = 0; i < 12; i++) {
+            for (int j = 0; j < 3; j++) {
+                zofka.turnRight(10);
+                zofka.move(5);
+            }
+                zofka.turnLeft(90);
+                zofka.move(20);
+                zofka.turnLeft(180);
+                zofka.move(20);
+                zofka.turnLeft(90);
+
+
+
+
+
+        }
+
+    }
+    public void kolo() {
+        zofka = new Turtle();
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(150);
+        zofka.penDown();
+        for (int i = 0; i < 40; i++) {
+            zofka.move(3);
+            zofka.turnRight(10);
+
+
+        }
+
+    }
+
+
+
+
     public void prasatko() {
         zofka = new Turtle();
 
@@ -103,11 +145,28 @@ HlavniProgram {
 
 
     }
+    public void xhran() {
+        zofka = new Turtle();
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(200);
+        zofka.penDown();
+        for (int i = 0; i < 8; i++) {
+            zofka.move(40);
+            zofka.turnRight(45);
+
+
+        }
+
+    }
 
     public static void main(String[] args){
 
 
-          new HlavniProgram().prasatko();
+       // new HlavniProgram().prasatko();
+       // new HlavniProgram().kolo();
+       // new HlavniProgram().xhran();
+        new HlavniProgram().slunce();
 
 
 
